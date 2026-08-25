@@ -1,6 +1,6 @@
 {
-  "versionCode": 45,
+  "versionCode": 46,
   "versionName": "0.1.0",
-  "notes": "ตรวจข้อมูลที่รถส่งมา: เจอแล้วว่า get() ทำงานถูกมาตลอด แต่รถคืนค่า INVALID เพราะยังไม่มีใคร subscribe — รอบนี้ลอง registerListener(IBYDAutoListener,int[]) ผ่าน Proxy แล้วอ่านซ้ำ ดูว่า sentinel กลายเป็นค่าจริงไหม + ใช้ค่า INVAILD_INT/INVALID_DOUBLE/INVALID_FLOAT ที่คลาสประกาศเองแทนการเดาเกณฑ์",
+  "notes": "ตรวจข้อมูลที่รถส่งมา: รอบก่อน subscribe แล้วเงียบสนิท รอบนี้ตัดสองข้อสงสัยทิ้ง — ใช้ registerListener แบบไม่ระบุรหัส (ขอทั้งหมด) แทนการเดารหัสเอง 60 ตัว และฟังนานขึ้นเป็น 8 วินาที ⚠️ รอบนี้ต้องกดตรวจ *ตอนรถติดเครื่อง/กำลังขับ* เพราะถ้าข้อมูลเป็นแบบส่งเมื่อค่าเปลี่ยน รถจอดนิ่งก็จะเงียบเป็นปกติ",
   "url": "https://github.com/leonlek/radarpin-dist/releases/download/v0.1.0/RadarPin-0.1.0.apk"
 }
