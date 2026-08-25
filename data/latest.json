@@ -1,6 +1,6 @@
 {
-  "versionCode": 48,
+  "versionCode": 49,
   "versionName": "0.1.0",
-  "notes": "ตรวจข้อมูลที่รถส่งมา: รอบก่อนชื่อ feature id ออกมาแล้ว (STATISTIC_*, POWER_LOW_VOLTAGE) แต่ตัวเลขค่าโดนขอบจอกิน เพราะ getDeviceType ซ้ำทุกบรรทัดกินความกว้าง — รอบนี้ตัดตัวระบุอุปกรณ์ทิ้ง ย่อชื่อ field และแยกค่าไปอีกบรรทัด ให้ถ่ายรูปติดครบ",
+  "notes": "ตรวจข้อมูลที่รถส่งมา: อ่านค่าได้แล้ว (int/getValue คือช่องที่มีค่าจริง, double เป็น 0.0 ช่องว่าง) — รอบนี้เก็บเฉพาะ callback ที่มี featureId แล้ว dedupe ตาม id (เดิม onDataChanged ที่ไม่มี id กินโควตาจนเห็นแค่ 3-4 รหัส) ฟังนาน 15 วิ และหลัง subscribe อ่านย้อนเฉพาะรหัสที่ชื่อบอกความหมาย (SOC/MILEAGE/RANGE/PRESSURE/GEAR) แทนการสุ่ม 400 ตัวแรก",
   "url": "https://github.com/leonlek/radarpin-dist/releases/download/v0.1.0/RadarPin-0.1.0.apk"
 }
