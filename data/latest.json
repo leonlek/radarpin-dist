@@ -1,6 +1,6 @@
 {
-  "versionCode": 47,
+  "versionCode": 48,
   "versionName": "0.1.0",
-  "notes": "🎉 รถส่งข้อมูลกลับมาแล้ว! subscribe แบบไม่ระบุรหัสได้ callback จริง onDataEventChanged(featureId, value) — รอบนี้แก้การแกะค่า: เดิมคืน field แรกที่ไม่ใช่ sentinel เลยได้ 0.0 จาก doubleValue ทั้งที่ของจริงอาจอยู่ใน intValue ตอนนี้พิมพ์ทุก field ให้เห็นหมด + แปลง featureId เป็นชื่อจาก codebook + ไม่โชว์ id เดิมซ้ำ",
+  "notes": "ตรวจข้อมูลที่รถส่งมา: รอบก่อนชื่อ feature id ออกมาแล้ว (STATISTIC_*, POWER_LOW_VOLTAGE) แต่ตัวเลขค่าโดนขอบจอกิน เพราะ getDeviceType ซ้ำทุกบรรทัดกินความกว้าง — รอบนี้ตัดตัวระบุอุปกรณ์ทิ้ง ย่อชื่อ field และแยกค่าไปอีกบรรทัด ให้ถ่ายรูปติดครบ",
   "url": "https://github.com/leonlek/radarpin-dist/releases/download/v0.1.0/RadarPin-0.1.0.apk"
 }
