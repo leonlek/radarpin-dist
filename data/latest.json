@@ -1,6 +1,6 @@
 {
-  "versionCode": 46,
+  "versionCode": 47,
   "versionName": "0.1.0",
-  "notes": "ตรวจข้อมูลที่รถส่งมา: รอบก่อน subscribe แล้วเงียบสนิท รอบนี้ตัดสองข้อสงสัยทิ้ง — ใช้ registerListener แบบไม่ระบุรหัส (ขอทั้งหมด) แทนการเดารหัสเอง 60 ตัว และฟังนานขึ้นเป็น 8 วินาที ⚠️ รอบนี้ต้องกดตรวจ *ตอนรถติดเครื่อง/กำลังขับ* เพราะถ้าข้อมูลเป็นแบบส่งเมื่อค่าเปลี่ยน รถจอดนิ่งก็จะเงียบเป็นปกติ",
+  "notes": "🎉 รถส่งข้อมูลกลับมาแล้ว! subscribe แบบไม่ระบุรหัสได้ callback จริง onDataEventChanged(featureId, value) — รอบนี้แก้การแกะค่า: เดิมคืน field แรกที่ไม่ใช่ sentinel เลยได้ 0.0 จาก doubleValue ทั้งที่ของจริงอาจอยู่ใน intValue ตอนนี้พิมพ์ทุก field ให้เห็นหมด + แปลง featureId เป็นชื่อจาก codebook + ไม่โชว์ id เดิมซ้ำ",
   "url": "https://github.com/leonlek/radarpin-dist/releases/download/v0.1.0/RadarPin-0.1.0.apk"
 }
