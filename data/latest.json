@@ -1,6 +1,6 @@
 {
-  "versionCode": 44,
+  "versionCode": 45,
   "versionName": "0.1.0",
-  "notes": "แก้ปุ่ม “ตรวจอัปเดตตอนนี้” กดครั้งที่สองแล้วเงียบ ต้อง force close ก่อน — สาเหตุคือการ์ดเดิมยังค้างอยู่ StateFlow เลยไม่ยิงซ้ำ และผลลัพธ์ FOUND ตั้งใจไม่ขึ้น toast จึงไม่มีอะไรตอบสนองเลย ตอนนี้กดแล้วมีข้อความทุกกรณี และบอกสาเหตุถ้าตรวจไม่สำเร็จ · ตรวจข้อมูลที่รถส่งมา: อ่านค่าจาก public field ของ BYDAutoEventValue ด้วย + ดัมป์โครงสร้างให้เห็นว่าค่าอยู่ตรงไหน",
+  "notes": "ตรวจข้อมูลที่รถส่งมา: เจอแล้วว่า get() ทำงานถูกมาตลอด แต่รถคืนค่า INVALID เพราะยังไม่มีใคร subscribe — รอบนี้ลอง registerListener(IBYDAutoListener,int[]) ผ่าน Proxy แล้วอ่านซ้ำ ดูว่า sentinel กลายเป็นค่าจริงไหม + ใช้ค่า INVAILD_INT/INVALID_DOUBLE/INVALID_FLOAT ที่คลาสประกาศเองแทนการเดาเกณฑ์",
   "url": "https://github.com/leonlek/radarpin-dist/releases/download/v0.1.0/RadarPin-0.1.0.apk"
 }
